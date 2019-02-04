@@ -1,0 +1,325 @@
+
+/*--------------------------------------------------*/
+body {
+	padding-bottom: 40px;
+    padding-top: 60px;
+}
+#footer{
+height: 100px;
+}
+/* Button */
+.button_all {
+  font: 700 18px/59px "Roboto", sans-serif;
+  width: 180px;
+  text-align: center;
+  background: #399abc;
+  display: block;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+.button_all:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #0e426a;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.button_all:hover, .button_all:focus {
+  color: #fff !important;
+}
+.button_all:hover:before, .button_all:focus:before {
+  transform: scaleY(1);
+}
+
+/* Section Title*/
+.tittle {
+  text-align: center;
+  text-transform: uppercase;
+}
+.tittle h2 {
+  font: 400 24px "Oswald", sans-serif;
+  color: #222222;
+  padding-top: 90px;
+  position: relative;
+}
+.tittle h2:after {
+  content: "";
+  position: absolute;
+  background: #399abc;
+  height: 5px;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+.tittle h4 {
+  font: 400 14px "Roboto", sans-serif;
+  color: #555555;
+  padding-top: 55px;
+}
+
+/* Subtittle */
+.subtittle h2 {
+  font: 700 36px "Roboto", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+.subtittle h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80px;
+  background: #222222;
+  left: 0;
+  bottom: -22px;
+}
+.subtittle h5 {
+  font: 400 14px "Roboto", sans-serif;
+  color: #555555;
+  padding-top: 22px;
+}
+
+/* Preloader */
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #ffffff;
+  background-image: url(../images/load2.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+}
+
+/*--------------------------------------------------*/
+/*Prefix Styles*/
+.m0 {
+  margin: 0;
+}
+
+.p0 {
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /*Section Fix*/
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  margin: 0;
+}
+body p {
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+  color: #555555;
+  margin: 0;
+}
+body section.row, body header.row, body footer.row {
+  margin: 0;
+}
+
+/*Ancore*/
+a, .btn, button {
+  outline: none;
+  transition: all 300ms linear 0s;
+}
+a:before, a:after, .btn:before, .btn:after, button:before, button:after {
+  transition: all 300ms linear 0s;
+}
+a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
+  outline: none;
+  text-decoration: none;
+  transition: all 300ms linear 0s;
+}
+
+
+.login_hide .fa-times{
+  float: right;
+}
+.panel-login>.panel-heading a {
+  margin-left: 100%;
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.panel-login>.panel-heading a.active {
+  color: #59B2E0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.panel-login>.panel-heading hr {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+}
+
+.panel-login input[type="text"],
+.panel-login input[type="email"],
+.panel-login input[type="password"] {
+  height: 45px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.panel-login input:hover,
+.panel-login input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+
+.btn-login {
+  background-color: #59B2E0;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #59B2E6;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+  color: #fff;
+  background-color: #53A3CD;
+  border-color: #53A3CD;
+}
+
+.forgot-password {
+  text-decoration: underline;
+  color: #888;
+}
+/* ----------------------*/
+
+
+.bg-light{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 500px;
+}
+.bg-light h2{
+  color: #399abc;
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(252, 252, 252);
+}
+.portfolio-item{
+  background-color: rgb(255, 255, 255);
+  margin: 2%;
+  width: 25%;
+  height: 220px;
+  padding: 20px;
+  float: left;
+  margin-bottom: 100px;
+
+}
+.portfolio-item img{
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+
+}
+.portfolio-hover{
+  padding: 0px;
+  background: transparent;
+}
+@media (max-width:650px){
+  .portfolio-item{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: 250px;
+  
+  }
+}
+.portfolio-caption h4{
+text-align: center;
+}
+@media (max-width:768px){
+  .portfolio-item{
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+/***********
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+@media (max-width:990px){
+  .header_aera .navbar-header .navbar-brand img {
+    margin-top: 10px;
+    max-width: 20%;
+  }
+}
+@media (max-width:520px){
+  .header_aera .navbar-header .navbar-brand img {
+    margin-top: 10px;
+    max-width: 50%;
+  }
+}
+/************Translate***************/
+/*
+.goog-te-menu-value span{
+  text-transform: uppercase;
+  color: #399abc;
+  font-weight: bold;
+}
+.goog-te-gadget-simple img{
+  display: none;
+}
+.google_translate_element{
+  border: none;
+}
+
+.skiptranslate iframe{
+  display: none;
+}*/
